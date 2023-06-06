@@ -38,7 +38,6 @@ with Header2:
 with Header3:
     model = trained_model()
     st.header("Output")
-    st.text("If you have the actual result, can you write it?")
     predict_button = st.button("Show the prediction")
     output = st.container()
     if predict_button:
@@ -48,6 +47,6 @@ with Header3:
     number = st.number_input("Actual result", step=10.0, format="%.2f")
     getRealButton = st.container()
     if getRealButton.button("I wrote the actual result"):
-        st.write("If you have the actual result, can you write it?")
+        st.write("Do something")
     # Here you can save the actual result with the model's prediction for later comparison
 
