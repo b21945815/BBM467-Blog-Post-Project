@@ -48,5 +48,6 @@ with Header3:
     number = st.number_input("Actual result", step=10.0, format="%.2f")
     getRealButton = st.container()
     if getRealButton.button("I wrote the actual result"):
-        print("Here you can save the actual result with the model's prediction for later comparison")
+        st.write("If you have the actual result, can you write it?")
+    # Here you can save the actual result with the model's prediction for later comparison
 
